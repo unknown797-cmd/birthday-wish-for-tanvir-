@@ -4,16 +4,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Pagol 😂</title>
+<title>Happy Birthday Tanvir 😂</title>
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
 
 body{
   min-height:100vh;
   font-family:Arial,sans-serif;
-  color:white;
-  background:linear-gradient(135deg,#160021,#4b075e,#13001d);
+  color:#fff;
+  background:
+    radial-gradient(circle at top,#123b49,transparent 45%),
+    linear-gradient(135deg,#030609,#07151d,#001b27);
   display:flex;
   justify-content:center;
   align-items:center;
@@ -24,13 +30,14 @@ body{
 .card{
   width:90%;
   max-width:650px;
+  max-height:90vh;
+  overflow:auto;
   padding:35px 22px;
-  border:1px solid #ff71d0;
-  border-radius:28px;
-  background:#ffffff12;
-  backdrop-filter:blur(12px);
-  box-shadow:0 0 35px #ff36b855;
-  animation:pop 1s ease;
+  border:1px solid #00f5a0;
+  border-radius:25px;
+  background:#07151de8;
+  box-shadow:0 0 25px #00f5a044,0 0 60px #008cff22;
+  animation:pop 0.8s ease;
 }
 
 @keyframes pop{
@@ -39,11 +46,13 @@ body{
 }
 
 h1{
-  color:#ff8cde;
+  color:#00ffa6;
   font-size:clamp(32px,8vw,55px);
   margin:18px 0;
-  text-shadow:0 0 20px #ff2ac5;
+  text-shadow:0 0 18px #00ffa688;
 }
+
+h2{color:#00c8ff}
 
 p{
   font-size:18px;
@@ -57,20 +66,20 @@ p{
 }
 
 @keyframes bounce{
-  to{transform:translateY(-12px) rotate(8deg)}
+  to{transform:translateY(-10px) rotate(7deg)}
 }
 
 button{
   padding:14px 25px;
   margin-top:15px;
-  border:none;
+  border:1px solid #00ffa6;
   border-radius:30px;
-  color:white;
-  background:linear-gradient(90deg,#ff168b,#9d36ff);
+  color:#00110c;
+  background:linear-gradient(90deg,#00ffa6,#00c8ff);
   font-size:16px;
   font-weight:bold;
   cursor:pointer;
-  box-shadow:0 0 20px #ff168b77;
+  box-shadow:0 0 20px #00ffa633;
 }
 
 button:hover{transform:scale(1.06)}
@@ -89,49 +98,50 @@ button:hover{transform:scale(1.06)}
   to{transform:translateY(-110vh) rotate(360deg);opacity:0}
 }
 
-.small{font-size:14px;color:#ffd4f0}
+.small{font-size:14px;color:#8eeeff}
 </style>
 </head>
 
 <body>
-
 <div class="card">
 
   <section class="page active" id="p1">
     <div class="emoji">🤡🎂</div>
     <p>আজ একটা বিশেষ গাধার জন্মদিন! 🐴</p>
-    <h1>Happy Birthday!</h1>
-    <p>ওই শালা, তোর জন্য একটা সারপ্রাইজ আছে! 😂</p>
+    <h1>HAPPY BIRTHDAY</h1>
+    <h2>🔥 TANVIR 🔥</h2>
+    <p>ওই শালা Tanvir, তোর জন্য সারপ্রাইজ আছে! 😂</p>
     <button onclick="go(2)">খুলে দেখ বেটা 🤣</button>
   </section>
 
   <section class="page" id="p2">
-    <div class="emoji">🖕😂</div>
-    <h1>এই হারামি!</h1>
+    <div class="emoji">🤦‍♂️💀</div>
+    <h1>এই Tanvir!</h1>
     <p>
       আরেকটা বছর বুড়ো হলি,<br>
       কিন্তু বুদ্ধি কি একটুও বাড়ল? 🤣<br>
       তোর মাথায় মনে হয় এখনো<br>
       Wi-Fi সিগন্যাল আসে না! 📡
     </p>
-    <button onclick="go(3)">আরও অপমান চাই 😭</button>
+    <button onclick="go(3)">পরের পেজ 😂</button>
   </section>
 
   <section class="page" id="p3">
-    <div class="emoji">🤦‍♂️💀</div>
+    <div class="emoji">😈🔥</div>
     <h1>ওই মাদারচোদ!</h1>
     <p>
-      তুই একটা আস্ত পাগল,<br>
-      তোর কাজকর্ম দেখলে<br>
-      গাধাও নিজের বুদ্ধি নিয়ে গর্ব করবে! 😂
+      Tanvir, তুই একটা আস্ত পাগল!<br>
+      তোর কাণ্ডকারখানা দেখে<br>
+      গাধাও বলবে—আমি ভালো আছি! 🤣
     </p>
     <p>তবে শালা, তুই না থাকলে আড্ডাটাও জমে না। ❤️</p>
     <button onclick="go(4)">শেষ সারপ্রাইজ 🎁</button>
   </section>
 
   <section class="page" id="p4">
-    <div class="emoji">🎂🥳❤️</div>
-    <h1>Happy Birthday!</h1>
+    <div class="emoji">🎂🥳💚</div>
+    <h1>HAPPY BIRTHDAY</h1>
+    <h2>MY PAGOL FRIEND TANVIR 😂</h2>
     <p>
       জীবনে অনেক বড় হ,<br>
       টাকা কামা, ভালো থাক,<br>
@@ -159,12 +169,12 @@ function go(n){
 
 function celebrate(){
   document.getElementById("end").textContent=
-    "কেক কাট, ছবি তোল—খাওয়ানোর সময় পালাস না কিন্তু! 😂🎉";
+    "Tanvir, কেক কাট—খাওয়ানোর সময় পালাস না কিন্তু! 😂🎉";
 
-  for(let i=0;i<35;i++){
+  for(let i=0;i<40;i++){
     let e=document.createElement("div");
     e.className="floating";
-    e.textContent=["🎉","🎂","😂","❤️","🎈","🤣"][Math.floor(Math.random()*6)];
+    e.textContent=["🎉","🎂","😂","💚","🎈","🤣","⚡"][Math.floor(Math.random()*7)];
     e.style.left=Math.random()*100+"vw";
     e.style.fontSize=(20+Math.random()*25)+"px";
     e.style.animationDuration=(3+Math.random()*4)+"s";
